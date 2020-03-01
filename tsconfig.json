@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "academy-lib": [
+        "dist/academy-lib"
+      ],
+      "academy-lib/*": [
+        "dist/academy-lib/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
