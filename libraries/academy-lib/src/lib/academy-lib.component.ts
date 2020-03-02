@@ -3,9 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'academy-academyLib',
   template: `
-    <ion-item>
-      academy-lib works! update
-    </ion-item>
+    <ion-icon name="home" color="red"></ion-icon>
   `,
   styles: []
 })
