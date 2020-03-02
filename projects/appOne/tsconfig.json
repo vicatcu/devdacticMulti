@@ -24,6 +24,12 @@
       ],
       "academy-lib/*": [
         "../../dist/academy-lib/*"
+      ],
+      "other-lib": [
+        "../../dist/other-lib"
+      ],
+      "other-lib/*": [
+        "../../dist/other-lib/*"
       ]
     }
   },
