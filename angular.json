@@ -37,6 +37,41 @@
           }
         }
       }
+    },
+    "other-lib": {
+      "projectType": "library",
+      "root": "libraries/other-lib",
+      "sourceRoot": "libraries/other-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libraries/other-lib/tsconfig.lib.json",
+            "project": "libraries/other-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libraries/other-lib/src/test.ts",
+            "tsConfig": "libraries/other-lib/tsconfig.spec.json",
+            "karmaConfig": "libraries/other-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libraries/other-lib/tsconfig.lib.json",
+              "libraries/other-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "academyLib"
 }
