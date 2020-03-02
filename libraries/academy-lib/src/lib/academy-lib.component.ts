@@ -11,7 +11,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcademyLibComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+    console.log('HELLO ACADEMY LIB COMPONENT');
+
+  }
 
   ngOnInit() {
   }

@@ -3,7 +3,10 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: 'lazy', pathMatch: 'full' },
-  { path: 'lazy', loadChildren: './lazy/lazy.module#LazyModule'},
+  { path: 'lazy',
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+  },
+  { path: 'ref', loadChildren: './lazy/lazy.module#LazyModule'},
 ];
 
 @NgModule({
