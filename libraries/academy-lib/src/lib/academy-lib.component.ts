@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
     <p>
       academy-lib works! update
     </p>
+    <p>
+      <lib-other-lib></lib-other-lib>
+    </p>
   `,
   styles: []
 })
