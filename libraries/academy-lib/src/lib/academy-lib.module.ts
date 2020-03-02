@@ -1,19 +1,17 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { AcademyLibComponent } from './academy-lib.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
-const routes: Routes = [
-  {
-    path: '',
-    component: AcademyLibComponent
-  }
-];
+import { IonicModule } from '@ionic/angular';
+import { AcademyLibComponent } from './academy-lib.component';
 
 @NgModule({
   declarations: [AcademyLibComponent],
   imports: [
-    RouterModule.forChild(routes)
+    CommonModule,
+    FormsModule,
+    IonicModule
   ],
-  exports: [RouterModule]
+  exports: []
 })
 export class AcademyLibModule { }
